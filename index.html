@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/src/styles/style.css" />
+
+    <!-- Nama: Fathimah Abiyyi Khairunnisa
+        ID: D2024X087 -->
+</head>
+<body>
+    <header>
+        <header-bar></header-bar>
+    </header>
+
+    <main>
+        <section id="inputContainer">
+            <form id="form">
+                <fieldset id="fieldset">
+                    <input type="text" id="noteTitle" name="noteTitle" placeholder="Add Note..." required/>
+                    <textarea id="noteDesc" name="noteDesc" placeholder="Add Description..." required></textarea>
+                    <button type="submit" id="submitNote">Add</button>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <div id="noteListContainer">
+                <note-list></note-list>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <footer-bar></footer-bar>
+    </footer>
+
+    <script type="module" src="/src/app.js"></script>
+</body>
+</html>
